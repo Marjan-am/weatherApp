@@ -1,0 +1,50 @@
+
+html body{
+	font-family: 'Fira Sans', sans-serif;
+    background-color: #1b3866;
+    color: #ced2d6;
+}
+
+#wrapper{
+	width:50%;
+	margin-left: 25%;
+	margin-top: 5%;  
+}
+
+h1{
+	text-align: center;
+	padding-bottom: 30px;
+}
+
+ul li {
+	list-style: none;
+	line-height: 50px;	
+}
+
+.col-sm-6 .card {
+	background-color: #48333300;
+	border: #00000020;
+}
+
+.navbar-light{
+	background-color: #486e949e;
+}
+
+input.form-control{
+	background-color: #d2d4d666;
+	border: #6c757d;
+}
+
+button.btn-outline-secondary{
+	color: #eaf0f5;
+}
+
+
+
+
+
+
+
+
+
+

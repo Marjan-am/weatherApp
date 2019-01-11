@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,700" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<title>Weather App</title>
+</head>
+<body>
+	<div id="wrapper">
+		<div class="container">
+			<h1>Local Weather</h1>
+				<nav class="navbar navbar-expand-lg navbar-light">
+				  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+				    <span class="navbar-toggler-icon"></span>
+				  </button>
+
+				  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+				    <div class="btn-group btn-group-toggle mr-auto my-3" data-toggle="buttons">
+					  <label class="btn btn-secondary active" id="f" >
+					    <input type="radio" name="options" id="option1" autocomplete="off" checked> <sup>o</sup> F
+					  </label>
+					  <label class="btn btn-secondary" id="c">
+					    <input type="radio" name="options" id="option2" autocomplete="off"> <sup>o</sup> C
+					  </label>
+					</div>  
+				    <form class="form-inline my-2 my-lg-0" action="https://api.openweathermap.org/data/2.5/weather?q=Escondido&units=imperial&APPID=57b04c7c9c6eb13cb85f4247dfb35fdd">
+				      <input class="form-control mr-sm-2" type="search" id="search_input">
+				      <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit" id="search_btn">Search</button>
+				    </form>
+				  </div>
+				</nav>
+		</div><!--End of div container-->
+		<div class="container">	
+	    	<div class="row">
+			  <div class="col-sm-6">
+			    <div class="card">
+			      <div class="card-body">			       
+			        <ul class="card-text">
+			        	<li id="picture"><img id= "animation"></li>   
+			        	<li><h3 class="card-title" id="temperature"></h3></li>  			 							
+						<li id="summary"></li>
+						<li id="city_name"></li>
+						<li id="time"></li>
+			        </ul>
+			      </div>
+			    </div>
+			  </div>
+			  <div class="col-sm-6">
+			    <div class="card">
+			      <div class="card-body">   
+			        <div class="card-text">
+			        	<p>Humidity: <span id="humidity"></span></p>
+						<p>Wind: <span id="wind"></span></p>
+						<p>Max Temperature: <span id="temp_max"></span></p>
+						<p>Min Temperature: <span id="temp_min"></span></p>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+		</div>		
+	</div><!--End of div Wrapper-->
+
+		<!-- Bootstrap JS. --> 
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+		<script type="text/javascript" src= "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+		 <script type="text/javascript" src="weather.js"></script>		
+</body>
+</html>
